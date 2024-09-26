@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 // import serviceHeaderImg from "@/assets/service-header-image.png";
-import serviceHeaderImg from "@/assets/images/service.svg";
+import serviceHeaderImg from "@/assets/placeholder-images/ServiceBannerImg.svg";
 
 const ServiceHeader = () => {
   return (

@@ -93,30 +93,18 @@ const ServicesCard = ({ service }) => {
   };
 
   useEffect(() => {
-    const validateOffer = async () => {
-      if (userDetails?.offer !== "No-offer") {
-        const isOfferValid = getOfferValidation(
-          userDetails?.offerStartDate,
-          userDetails?.offerEndDate
-        );
+    const isOfferValid = getOfferValidation(
+      userDetails?.offerStartDate,
+      userDetails?.offerEndDate
+    );
 
-        if (isOfferValid.isValid) {
-          setOfferValidation(isOfferValid.remainingDays);
-        } else {
-          try {
-            await claimOffer({
-              userId: userDetails?.id,
-              offerName: "No-offer",
-            });
-          } catch (err) {
-            console.error("Error claiming offer:", err);
-          }
-        }
-      }
-    };
-
-    if (userDetails) {
-      validateOffer();
+    if (!isOfferValid.isValid) {
+      claimOffer({
+        userId: userDetails?.id,
+        offerName: "No-offer",
+      });
+    } else {
+      setOfferValidation(isOfferValid.remainingDays);
     }
   }, [userDetails, claimOffer]);
 
@@ -155,7 +143,9 @@ const ServicesCard = ({ service }) => {
             <p
               className={cn(
                 "font-semibold text-gray-600 flex gap-2 my-1",
-                userDetails?.offer === "free-trial" && "line-through"
+                userDetails?.offer === "free-trial" &&
+                  offerValidation > 0 &&
+                  "line-through"
               )}
             >
               Price:{" "}
@@ -170,7 +160,7 @@ const ServicesCard = ({ service }) => {
                 </div>
               )}
             </p>
-            {userDetails?.offer === "free-trial" && (
+            {userDetails?.offer === "free-trial" && offerValidation > 0 && (
               <p className="font-semibold text-gray-600 mb-1">
                 You have 7 days free trial
               </p>
@@ -185,7 +175,7 @@ const ServicesCard = ({ service }) => {
           )}
         </div>
 
-        {userDetails?.offer === "free-trial" ? (
+        {userDetails?.offer === "free-trial" && offerValidation > 0 ? (
           <button
             onClick={handleFreeTrail}
             className="custom-outline-btn bg-secondary/5 border-secondary hover:bg-secondary mt-4"

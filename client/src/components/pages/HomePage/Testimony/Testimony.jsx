@@ -1,8 +1,6 @@
-import { Check } from "lucide-react";
+import testimonialImg from "@/assets/placeholder-images/TestimonyImg.svg";
+import userImg from "@/assets/placeholder-images/homeUserImg.svg";
 import Image from "next/image";
-import React from "react";
-import testimonialImg from "@/assets/testimonial.png";
-import userImg from "@/assets/user.png";
 
 const Testimony = () => {
   return (

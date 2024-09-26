@@ -1,6 +1,6 @@
 import React from "react";
 // import aboutUsInfo from "@/assets/about-us-info.jpg";
-import aboutUsInfo from "@/assets/images/about-us-info.png";
+import aboutUsInfo from "@/assets/placeholder-images/ServiceBannerImg.svg";
 import Image from "next/image";
 
 const AboutUsInfo = () => {

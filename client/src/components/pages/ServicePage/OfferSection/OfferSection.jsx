@@ -36,7 +36,6 @@ const OfferSection = () => {
         userId: userInfo?.id,
         offerName,
       }).unwrap();
-      console.log(res);
       if (res?.success) {
         toast.success(res?.message, { id: toastId });
       }

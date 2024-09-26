@@ -1,4 +1,4 @@
-import chooseUsImg from "@/assets/whyChooseUs.png";
+import chooseUsImg from "@/assets/placeholder-images/chooseUsImg.svg";
 import { Check } from "lucide-react";
 import Image from "next/image";
 

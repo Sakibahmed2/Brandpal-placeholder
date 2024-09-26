@@ -1,10 +1,5 @@
+import brandLogo from "@/assets/placeholder-images/brandLogoImg.svg";
 import SectionTitle from "@/components/ui/SectionTitle";
-import React from "react";
-import google from "@/assets/google.png";
-import sublimeText from "@/assets/sublimeText.png";
-import blender from "@/assets/blender.png";
-import soundCloud from "@/assets/sound_cloud.png";
-import mi from "@/assets/mi.png";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
@@ -23,7 +18,7 @@ const Partner = () => {
         <Marquee direction="right" className="flex items-center gap-4 py-4">
           {/* SoundCloud Logo */}
           <Image
-            src={soundCloud}
+            src={brandLogo}
             width={100}
             height={100}
             alt="SoundCloud logo"
@@ -32,7 +27,7 @@ const Partner = () => {
 
           {/* Google Logo */}
           <Image
-            src={google}
+            src={brandLogo}
             width={100}
             height={100}
             alt="Google logo"
@@ -41,7 +36,7 @@ const Partner = () => {
 
           {/* Sublime Text Logo */}
           <Image
-            src={sublimeText}
+            src={brandLogo}
             width={100}
             height={100}
             alt="Sublime Text logo"
@@ -50,7 +45,7 @@ const Partner = () => {
 
           {/* Blender Logo */}
           <Image
-            src={blender}
+            src={brandLogo}
             width={100}
             height={100}
             alt="Blender logo"
@@ -59,7 +54,7 @@ const Partner = () => {
 
           {/* MI Logo */}
           <Image
-            src={mi}
+            src={brandLogo}
             width={100}
             height={100}
             alt="MI logo"

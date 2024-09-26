@@ -1,15 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import React from "react";
 // import loginImg from "@/assets/login.jpg";
-import loginImg from "@/assets/images/login.jpg";
-import Image from "next/image";
+import loginImg from "@/assets/placeholder-images/loginImg.svg";
 import Container from "@/components/ui/Container";
 import { useLoginUserMutation } from "@/redux/api/authApi";
-import { toast } from "sonner";
 import { setUserInfo } from "@/utils/local-storage";
-import { usePathname, useRouter } from "next/navigation";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { toast } from "sonner";
 
 const LoginPage = () => {
   const [loginUser] = useLoginUserMutation();

@@ -1,7 +1,6 @@
-import { Check, FileUp, Target, TrendingUp } from "lucide-react";
+import strategyMarketing from "@/assets/placeholder-images/StrategyMarketingImg.svg";
+import { FileUp, Target, TrendingUp } from "lucide-react";
 import Image from "next/image";
-import strategyMarketing from "@/assets/StrategyMarketing.png";
-import React from "react";
 
 const StrategyMarketing = () => {
   return (

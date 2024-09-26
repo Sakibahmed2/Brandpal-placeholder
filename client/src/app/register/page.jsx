@@ -1,7 +1,7 @@
 "use client";
 
 import Container from "@/components/ui/Container";
-import loginImg from "@/assets/images/login.jpg";
+import loginImg from "@/assets/placeholder-images/registerImg.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { toast } from "sonner";

@@ -1,6 +1,6 @@
 "use client";
 
-import bannerImg from "@/assets/bannerImg.png";
+import bannerImg from "@/assets/placeholder-images/bannerImg.svg";
 import { useClaimOfferMutation } from "@/redux/api/userApi";
 import { getUserInfo } from "@/utils/getUserInfo";
 import Image from "next/image";

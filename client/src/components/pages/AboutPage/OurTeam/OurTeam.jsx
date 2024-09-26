@@ -1,13 +1,7 @@
 "use client";
 
+import teamImg from "@/assets/placeholder-images/OurTeamImg.svg";
 import SectionTitle from "@/components/ui/SectionTitle";
-import React, { useState } from "react";
-import ashiqurzamanImg from "@/assets/team/ashiquramman.png";
-import shaounImg from "@/assets/team/shaoun.png";
-import minhazImg from "@/assets/team/minhaz.png";
-import sakibImg from "@/assets/team/sakib.png";
-import Image from "next/image";
-import cn from "@/libs/cn";
 import TeamCard from "@/components/ui/TeamCard";
 
 const teamData = [
@@ -15,25 +9,25 @@ const teamData = [
     id: 1,
     name: "SM ASHIQURZAMMAN",
     role: "CEO & Founder",
-    image: ashiqurzamanImg,
+    image: teamImg,
   },
   {
     id: 2,
     name: "MD REJUANUL ISLAM SHAOUN",
     role: "Web Developer",
-    image: shaounImg,
+    image: teamImg,
   },
   {
     id: 3,
     name: "MD MINHAZUL ABDIN",
     role: "Web Developer",
-    image: minhazImg,
+    image: teamImg,
   },
   {
     id: 4,
     name: "SAKIB AHMED LOSKOR",
     role: "Web Developer",
-    image: sakibImg,
+    image: teamImg,
   },
 ];
 

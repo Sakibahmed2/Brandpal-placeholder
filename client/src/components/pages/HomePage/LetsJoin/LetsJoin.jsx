@@ -1,7 +1,5 @@
-import { FileUp, Target, TrendingUp } from "lucide-react";
+import letsJoinImage from "@/assets/placeholder-images/LetJoinUsImg.svg";
 import Image from "next/image";
-import React from "react";
-import letsJoinImage from "@/assets/whyChooseUs.png";
 
 const LetsJoin = () => {
   return (
@@ -9,8 +7,8 @@ const LetsJoin = () => {
       <p className="text-xl text-primary md:hidden flex justify-center mb-3">
         LET&lsquo;S JOIN
       </p>
-      <div className="flex flex-col-reverse md:flex-row justify-center items-center w-full ">
-        <div className=" mt-10 md:mt-0">
+      <div className="flex flex-col-reverse md:flex-row justify-center items-center w-full gap-5">
+        <div className=" mt-10 md:mt-0 ">
           <p className="text-xl text-primary hidden md:flex">
             LET&lsquo;S JOIN
           </p>

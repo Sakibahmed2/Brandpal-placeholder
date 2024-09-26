@@ -32,7 +32,7 @@ const claimOffer = async (userId, offer) => {
     throw new AppError(400, "You have already claimed this offer");
   }
 
-  if (user.offer === "free-trial" || user.offer === "40%-off") {
+  if (user.offer === "free-trial" && user.offer === "40%-off") {
     throw new AppError(400, "You have an active offer");
   }
 
